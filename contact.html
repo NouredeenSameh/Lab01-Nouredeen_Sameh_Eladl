@@ -2,9 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudFlow Systems - Contact</title>
 </head>
 <body>
+
+<header>
+    <h1>CloudFlow Systems</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services & Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h2>Project Inquiries & Consultation</h2>
+    <p>Submit your system parameters below to schedule a technical architecture review.</p>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Client Contact Details</legend>
+
+            <p>
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname" required>
+            </p>
+
+            <p>
+                <label for="email">Work Email:</label><br>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="start_date">Expected Project Start Date:</label><br>
+                <input type="date" id="start_date" name="start_date" required>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Service Scope</legend>
+
+            <p>
+                <label for="service_type">Select Service Category:</label><br>
+                <select id="service_type" name="service_type" required>
+                    <option value="">-- Choose an option --</option>
+                    <option value="cicd">CI/CD Pipeline Setup</option>
+                    <option value="cloud_migration">Container Migration &amp; Dockerization</option>
+                    <option value="monitoring">Telemetry, Metrics &amp; Alerting</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="requirements">Technical Requirements &amp; Notes:</label><br>
+                <textarea id="requirements" name="requirements" rows="6" cols="40" placeholder="Specify OS, infrastructure constraints, or workload targets..." required></textarea>
+            </p>
+
+            <p>
+                <button type="submit">Submit Consultation Request</button>
+            </p>
+        </fieldset>
+    </form>
+</main>
+
+<footer>
+    <p>&copy; 2026 Nouredeen Sameh. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
